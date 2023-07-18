@@ -1,10 +1,10 @@
 import React from 'react'
-import  Navbar  from './Components/Navbar/Navbar'
+import PersonSection from './components/Personsection'
 
 export default function App() {
   return (
     <div>
-      <Navbar></Navbar>
+      <PersonSection></PersonSection>
     </div>
   )
 }
