@@ -17,7 +17,8 @@ function Users() {
 
   return (
     <div>
-      <h1>Users</h1>
+      <h1>
+        &nbsp;&nbsp;&nbsp;Users</h1>
       <ul>
         {users.map(user => (
           <li key={user.id}>
@@ -32,9 +33,12 @@ function Users() {
             </p>
             <p>Phone: {user.phone}</p>
             <p>Website: {user.website}</p>
-            <p>Company: {user.company.name}</p>
-            <p>Catch-Phrase: {user.company.catchPhrase}</p>
-           <p>Bs: {user.company.bs}</p>
+           <p>Company: <br/>
+            &nbsp;&nbsp;    Name: {user.company.name}<br/>
+            &nbsp;&nbsp;    Catch-Phrase : {user.company.catchPhrase}<br/>
+            &nbsp;&nbsp;    Bs  : {user.company.bs}<br/>
+            
+            </p>
           </li>
         ))}
       </ul>
